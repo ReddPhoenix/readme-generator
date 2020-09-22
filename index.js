@@ -77,4 +77,4 @@ init();
 // *Tests
 // *Questions
 
-// *Generated README will include 1 badge spcific to the repository
+// *Generated README will include 1 badge specific to the repository
