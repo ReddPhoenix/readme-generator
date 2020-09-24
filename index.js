@@ -3,7 +3,8 @@ const { default: Axios } = require("axios");
 // Axios will be used for http requests
 
 const fs = require("fs");
-const inquirer = require("inquirer")
+const inquirer = require("inquirer");
+const axios = require("axios");
 
 // array of questions for user
 const questions = [{
@@ -97,3 +98,5 @@ init();
 // *Questions
 
 // *Generated README will include 1 badge specific to the repository
+
+
