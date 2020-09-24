@@ -1,3 +1,4 @@
+const { default: Axios } = require("axios");
 // Will need to have inquirer to ask user questions and validate answers
 // Axios will be used for http requests
 
@@ -51,6 +52,11 @@ const questions = [{
         type: "input",
         name: "question",
         message: "In case of questions, what is your contact information?"
+    },
+    {
+        type: "input",
+        name: "username",
+        message: "What is your GitHub username?"
     }
     // How to ask user to provide badges?
     // How to ask user to provide link to project on Github?
@@ -61,11 +67,18 @@ const questions = [{
 ];
 
 // function to write README file
+// need to create a seperate file to write the data into
 function writeToFile(fileName, data) {}
 
 // function to initialize program
 function init() {
+    inquirer.prompt(questions).then(data => {
 
+        //Use axios to request user repo data from GitHub API
+        axios.get(https://api.github.com/users + username).then(response => {
+        
+    })
+    }
 }
 
 // function call to initialize program
