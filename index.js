@@ -5,6 +5,7 @@ const { default: Axios } = require("axios");
 const fs = require("fs");
 const inquirer = require("inquirer");
 const axios = require("axios");
+const generate = require("./utils/generateMarkdown")
 
 // array of questions for user
 const questions = [{
@@ -15,11 +16,8 @@ const questions = [{
     {
         type: "input",
         name: "description",
-        message: "Could you describe your project?"
+        message: "Describe your project?"
     },
-    // {
-    //     table of contents???
-    // },
     {
         type: "input",
         name: "installation",
