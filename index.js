@@ -1,3 +1,9 @@
+// Will need to have inquirer to ask user questions and validate answers
+// Axios will be used for http requests
+
+const fs = require("fs");
+const inquirer = require("inquirer")
+
 // array of questions for user
 const questions = [{
         type: "input",
