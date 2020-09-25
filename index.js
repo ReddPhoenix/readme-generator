@@ -1,11 +1,10 @@
-const { default: Axios } = require("axios");
 // Will need to have inquirer to ask user questions and validate answers
 // Axios will be used for http requests
 
 const fs = require("fs");
 const inquirer = require("inquirer");
 const axios = require("axios");
-const generate = require("./utils/generateMarkdown")
+const generateMarkdown = require("./utils/generateMarkdown")
 
 // array of questions for user
 const questions = [{
@@ -61,23 +60,34 @@ const questions = [{
     // How to ask user to provide link to project on Github?
     // How to ask user to provide link to live app?
     // How to ask user to provide links to screenshots/GIFs/videos?
-    // Is "question" able to link to Github username?
+   
     
 ];
 
-// function to write README file
-// need to create a seperate file to write the data into
-function writeToFile(fileName, data) {}
+
 
 // function to initialize program
 function init() {
-    inquirer.prompt(questions).then(data => {
+    inquirer.prompt(questions).then(answers => {
+        // console.log("Beginning of inquirer");
+        console.log(answers);
 
         //Use axios to request user repo data from GitHub API
-        axios.get(https://api.github.com/users + username).then(response => {
-        
-    })
-    }
+        axios.get("https://api.github.com/users" + questions.username).then(response => {
+            console.log(response);
+
+
+
+            // function to write README file
+            // need to create a seperate file to write the data into
+            fs.writeToFile("README.md", generateMarkdown(answers), function (error) {
+                if (error) {
+                    throw error;
+                }
+            });
+
+        });
+    });
 }
 
 // function call to initialize program

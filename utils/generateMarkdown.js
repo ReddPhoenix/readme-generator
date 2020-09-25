@@ -1,6 +1,6 @@
 // function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
+function generateMarkdown(answers) {
+  return `# ${answers.title}
 
   ## Table of Contents
 - [Description](#description)
@@ -12,27 +12,29 @@ function generateMarkdown(data) {
 - [Questions](#question)
 
   ## Description
-  ${data.description}
+  ${answers.description}
 
   ## Installation
-  ${data.installation}
+  ${answers.installation}
 
   ## Usage
-  ${data.usage}
+  ${answers.usage}
 
   ## License
-  ${data.license}
+  ${answers.license}
 
   ## Contributing
-  ${data.contributing}
+  ${answers.contributing}
 
   ## Tests
-  ${data.test}
+  ${answers.test}
 
   ## Questions
-  ${data.question}
+  ${answers.question}
 
-
+  ## Badges
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
 `;
 }
 
