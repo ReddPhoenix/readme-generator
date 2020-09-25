@@ -25,43 +25,39 @@ const questions = [{
     {
         type: "input",
         name: "usage",
-        message: "Describe how your project is used."
-    },
-    // {
-    //     // Should license option be provided or have user select license?
-    //     type: "input",
-    //     name: "license",
-    //     message: " "
-    // },
-    {
-        type: "input",
-        name: "contributing",
-        message: "Enter any additional contributors to your project."
-        // Full names or Github usernames? Able to list multiple contributors?
+        message: "Describe how your project is used:"
     },
     {
-        // What type of tests?
         type: "input",
-        name: "test",
-        message: "Tests?"
-    },
-    {
-        // Contact via Github or email? Should option be presented to user?
-        type: "input",
-        name: "question",
-        message: "In case of questions, what is your contact information?"
+        name: "license",
+        message: "What license are you using? (MIT License as default) "
     },
     {
         type: "input",
         name: "username",
         message: "What is your GitHub username?"
+    },
+    {
+        type: "input",
+        name: "contributing",
+        message: "Enter any additional contributors to your project."
+        // Full names or Github usernames? 
+    },
+    {
+        type: "input",
+        name: "test",
+        message: "How do you run tests?"
+    },
+    {
+        type: "input",
+        name: "question",
+        message: "In case of questions, what is your contact information? (sample@email.com)"
+    },
+    {
+        type: "input",
+        name: "badge",
+        message: "Enter link to badge(s):"
     }
-    // How to ask user to provide badges?
-    // How to ask user to provide link to project on Github?
-    // How to ask user to provide link to live app?
-    // How to ask user to provide links to screenshots/GIFs/videos?
-   
-    
 ];
 
 

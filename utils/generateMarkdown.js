@@ -7,6 +7,7 @@ function generateMarkdown(answers) {
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
+- [GitHub User]
 - [Contributing](#contributing)
 - [Tests](#test)
 - [Questions](#question)
@@ -23,6 +24,9 @@ function generateMarkdown(answers) {
   ## License
   ${answers.license}
 
+  ## GitHub User
+  ${answers.username}
+
   ## Contributing
   ${answers.contributing}
 
@@ -33,6 +37,8 @@ function generateMarkdown(answers) {
   ${answers.question}
 
   ## Badges
+  ${answers.badge}
+
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
 `;
