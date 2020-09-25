@@ -1,45 +1,45 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `**# ${data.title}**
 
-  ## Table of Contents
+  ## **Table of Contents**
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [GitHub User]
+- [GitHub User](#github)
 - [Contributing](#contributing)
 - [Tests](#test)
 - [Questions](#question)
 
-  ## Description
+  ## **Description**
   ${data.description}
 
-  ## Installation
+  ## **Installation**
   ${data.installation}
 
-  ## Usage
+  ## **Usage**
   ${data.usage}
 
-  ## License
+  ## **License**
   ${data.license}
 
-  ## GitHub User
-  ${data.username}
+  ## **GitHub**
+  Github: [https://github.com/${data.username}](https://github.com/${data.username})
 
-  ## Contributing
+  ## **Contributing**
   ${data.contributing}
 
-  ## Tests
+  ## **Tests**
   ${data.test}
 
-  ## Questions
-  ${data.question}
+  ## **Questions**
+  Please contact me with questions via email: ${data.question}
 
-  ## Badges
+  ## **Badges**
   ${data.badge}
 
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
   [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
 `;
 }

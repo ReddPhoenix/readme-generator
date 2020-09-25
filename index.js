@@ -1,9 +1,6 @@
 // Will need to have inquirer to ask user questions and validate answers
-// Axios will be used for http requests
-
 const fs = require("fs");
 const inquirer = require("inquirer");
-// const axios = require("axios");
 const generateMarkdown = require("./utils/generateMarkdown")
 
 // array of questions for user
@@ -65,18 +62,13 @@ const questions = [{
 // function to initialize program
 function init() {
     inquirer.prompt(questions).then(answers => {
-        // console.log("Beginning of inquirer");
         console.log(answers);
 
-        //Use axios to request user repo data from GitHub API
-        // axios.get("https://api.github.com/users" + answers.username).then(response => {
-        //     console.log(response);
-
-            // function to write README file
-            // need to create a seperate file to write the data into
-            fs.writeFile("README.md", generateMarkdown(answers), function (err) {
-                if (err) {
-                    throw err;
+        // function to write README file
+        // need to create a seperate file to write the data into
+        fs.writeFile("README.md", generateMarkdown(answers), function (err) {
+            if (err) {
+                throw err;
                 }
             console.log("README Created!")
             });
