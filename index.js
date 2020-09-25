@@ -27,7 +27,7 @@ const questions = [{
     {
         type: "input",
         name: "license",
-        message: "What license are you using? (MIT License as default) "
+        message: "What license are you using? "
     },
     {
         type: "input",

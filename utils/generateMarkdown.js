@@ -1,13 +1,15 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
-  return `**# ${data.title}**
+  return `# ${data.title}
+
+  [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
+  ${data.badge}
 
   ## **Table of Contents**
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [GitHub User](#github)
 - [Contributing](#contributing)
 - [Tests](#test)
 - [Questions](#question)
@@ -24,9 +26,6 @@ function generateMarkdown(data) {
   ## **License**
   ${data.license}
 
-  ## **GitHub**
-  Github: [https://github.com/${data.username}](https://github.com/${data.username})
-
   ## **Contributing**
   ${data.contributing}
 
@@ -34,13 +33,12 @@ function generateMarkdown(data) {
   ${data.test}
 
   ## **Questions**
-  Please contact me with questions via email: ${data.question}
+  Please contact me with questions:
+  Github: [https://github.com/${data.username}](https://github.com/${data.username})
+  Email: ${data.question}
 
-  ## **Badges**
-  ${data.badge}
 
-
-  [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
+  
 `;
 }
 
