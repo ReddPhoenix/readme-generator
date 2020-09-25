@@ -17,12 +17,10 @@
   When creating an open source project on GitHub, it is important to have a quality README with information about the app--what is the app for, how to use the app, how to install it, how to report issues, and how to make contributions so that other developers are more likely to use and contribute to the success of the project. A command-line application will allow for quick and easy generation of a project README to get started quickly. This will allow a project creator to spend more time working on finishing the project and less time creating a good README.
 
   ## **Video**
-  ![Demo]()
-  To view a demo of README Generator click on the link below.
-
-
-   [Link to video](https://drive.google.com/file/d/14PZdcJckKdl_d5ANMhvLAD4r-Lqpubi-/view)
+  ![Demo](https://github.com/ReddPhoenix/readme-generator/blob/master/demo.gif?raw=true)
+  To view a video demo of README Generator click on the link to the right:   *[Link to video](https://drive.google.com/file/d/14PZdcJckKdl_d5ANMhvLAD4r-Lqpubi-/view)*
  
+  
   ## **Installation**
   1. npm install     2. node index.js
 
