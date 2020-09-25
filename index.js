@@ -3,7 +3,7 @@
 
 const fs = require("fs");
 const inquirer = require("inquirer");
-const axios = require("axios");
+// const axios = require("axios");
 const generateMarkdown = require("./utils/generateMarkdown")
 
 // array of questions for user
@@ -69,22 +69,20 @@ function init() {
         console.log(answers);
 
         //Use axios to request user repo data from GitHub API
-        axios.get("https://api.github.com/users" + questions.username).then(response => {
-            console.log(response);
-
-
+        // axios.get("https://api.github.com/users" + answers.username).then(response => {
+        //     console.log(response);
 
             // function to write README file
             // need to create a seperate file to write the data into
-            fs.writeToFile("README.md", generateMarkdown(answers), function (error) {
-                if (error) {
-                    throw error;
+            fs.writeFile("README.md", generateMarkdown(answers), function (err) {
+                if (err) {
+                    throw err;
                 }
+            console.log("README Created!")
             });
 
         });
-    });
-}
+    }
 
 // function call to initialize program
 init();
